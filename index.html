@@ -18,7 +18,7 @@ fetch("https://raw.githubusercontent.com/educacao-bruno01/materiais-digitais/mai
   })
   .then(function (text) {
 if(document.getElementById("ver").innerText !== "Falha ao coletar versão. Atualizações automáticas falharão." && document.getElementById("ver").innerText !== text) {
-  alert("Atualização disponível!");
+  alert("Atualize o programa indo para o modo online!");
 }
   });
 }, 2000);
@@ -26,4 +26,4 @@ if(document.getElementById("ver").innerText !== "Falha ao coletar versão. Atual
 <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="materiais-digitais.html">Download</a><br>
 <a href="https://educacao-bruno01.github.io/materiais-digitais/">Online</a>
 
-<br>update3.5
+<br>update4

@@ -10,6 +10,20 @@ fetch("https://raw.githubusercontent.com/educacao-bruno01/materiais-digitais/mai
   });
   document.getElementById("verMng").remove();
 </script>
+<script id="verChk">
+setTimeout(()=>{
+fetch("https://raw.githubusercontent.com/educacao-bruno01/materiais-digitais/main/version")
+  .then(function (response) {
+    return response.text();
+  })
+  .then(function (text) {
+if(document.getElementById("ver").innerText !== "Falha ao coletar versão. Atualizações automáticas falharão." && document.getElementById("ver").innerText !== text) {
+  alert("Atualização disponível!");
+}
+  });
+}, 2000);
+</script>
 <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="materiais-digitais.html">Download</a>
+<a href="https://educacao-bruno01.github.io/materiais-digitais/">Online</a>
 
-<br>update2
+<br>update3

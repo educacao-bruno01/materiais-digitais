@@ -1,6 +1,6 @@
 <h1>Batata!</h1>
 <h2 id="ver">Falha ao coletar versão. Atualizações automáticas falharão.</h2>
-<script id="ver">
+<script id="verMng">
 fetch("https://raw.githubusercontent.com/educacao-bruno01/materiais-digitais/main/version")
   .then(function (response) {
     return response.text();
@@ -8,8 +8,8 @@ fetch("https://raw.githubusercontent.com/educacao-bruno01/materiais-digitais/mai
   .then(function (text) {
     document.getElementById("ver").innerText = text;
   });
-  document.getElementById("ver").remove();
+  document.getElementById("verMng").remove();
 </script>
 <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="materiais-digitais.html">Download</a>
 
-update
+<br>update2
